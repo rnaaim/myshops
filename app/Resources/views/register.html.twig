@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<p> Insert your informations to register</p>
+<form action="{{ path('app_api_user_create') }}" method="post">
+    <span>Email</span>
+    <input type="email" name="email" value="" required>
+    <span>Username</span>
+    <input type="text" name="username" value="" required>
+    <span>Password</span>
+    <input type="password" name="password" value="" required>
+
+    <input type="submit" value="Submit">
+
+</form>
