@@ -1,6 +1,6 @@
 Shops
 -----
-An application that shows user a list of nearby shops and offer the posibilty to like or dislike them
+An application that shows users a list of nearby shops and offer the possibilty to like or dislike them.
 
 Installation
 ------------
