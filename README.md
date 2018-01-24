@@ -6,7 +6,7 @@ Installation
 ------------
 
   * *Requirements*:
-       - Php 7
+       - PHP7+
        - Composer : https://getcomposer.org/download/
        - MongoDB 3.4 : https://docs.mongodb.com/manual/installation/
        - Mongo-php-library : https://github.com/mongodb/mongo-php-library
