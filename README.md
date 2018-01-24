@@ -18,12 +18,15 @@ Installation
 
 		
     
-  * To init the project :
+  * To run the project :
   
       - git clone https://github.com/rnaaim/myshops.git 
       - Inside the project directory run `composer install` to install all required dependecies.
-	- create file : parameters.yml with default paramaters from  parameters.yml.dist and add these two at the end :
-				mongodb_server: "mongodb://localhost:27017"
-                                jwt_key_pass_phrase: passephrase ( this is the passe phrase you enter when generating SSH keys for LexikJWTAuthenticationBundle ( https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#configuration)
-
-	- To run the applicatoin : ./bin/console server:start
+      - Go to app/config and create new file parameters.yml
+      - Copy content from parameters.yml.dist to parameters.yml
+      - Generate new private and public keys for our authentication bundle https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#configuration
+      - Update the location of public and private keys in /app/config/config.yml under the lexik_jwt_authentication section
+       - Add two parameters at the end of parameters.yml :
+		`mongodb_server: "mongodb://localhost:27017"`
+                `jwt_key_pass_phrase: *passe phrase entered during keys generatoin*`
+       - To run the applicatoin : ./bin/console server:start
